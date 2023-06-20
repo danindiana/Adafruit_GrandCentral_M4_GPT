@@ -33,7 +33,7 @@ void checkGPIOPins() {
 void checkAnalogPins() {
   Serial.println("Checking Analog Pins...");
 
-  for (int pinNumber = A0; pinNumber < A16; pinNumber++) {
+  for (int pinNumber = A0; pinNumber < A15; pinNumber++) {
     int value = analogRead(pinNumber);
     Serial.print("Analog Pin A");
     Serial.print(pinNumber - A0);
